@@ -17,4 +17,7 @@ set shiftwidth=2
 set shiftround
 set expandtab
 set autowrite
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
 autocmd BufLeave,FocusLost * silent! wall
