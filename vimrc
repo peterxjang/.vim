@@ -2,7 +2,6 @@ set nocompatible
 syntax enable
 set path+=**
 set wildmenu
-set relativenumber
 set number
 colorscheme codedark
 set splitbelow
