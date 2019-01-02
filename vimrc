@@ -2,6 +2,7 @@ set nocompatible
 syntax enable
 set path+=**
 set wildmenu
+set wildignore+=node_modules/*
 set number
 colorscheme codedark
 set splitbelow
