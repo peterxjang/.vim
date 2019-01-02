@@ -20,7 +20,6 @@ set autowrite
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swap//
 set undodir=~/.vim/.undo//
-autocmd BufLeave,FocusLost * silent! wall
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
   command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
