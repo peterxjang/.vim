@@ -24,9 +24,8 @@ set wildignore+=node_modules/*
 syntax enable
 colorscheme codedark
 set cursorline
-highlight CursorLine ctermbg=none
-autocmd InsertEnter * highlight CursorLine ctermbg=240
-autocmd InsertLeave * highlight CursorLine ctermbg=none
+autocmd InsertEnter * set nocursorline
+autocmd InsertLeave * set cursorline
 inoremap <C-c> <Esc>
 " Linting
 let g:ale_fixers = {
