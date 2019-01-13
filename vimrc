@@ -20,13 +20,16 @@ set undodir=~/.vim/.undo//
 set path+=**
 set wildmenu
 set wildignore+=node_modules/*
-" Colors 
+" Colors
 syntax enable
 colorscheme codedark
 set cursorline
 autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
-inoremap <C-c> <Esc>
+" Modify escape
+imap <C-c> <Esc>
+inoremap <Esc> <Esc>:w<CR>
+nnoremap <C-c> :noh<CR><C-c>
 " Cursor
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
