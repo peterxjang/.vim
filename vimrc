@@ -35,6 +35,8 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 let g:ale_sign_column_always = 1
+" Emmet
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " Fuzzy finding
 set rtp+=~/.fzf
 " Shortcuts
