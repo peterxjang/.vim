@@ -27,6 +27,9 @@ set cursorline
 autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
 inoremap <C-c> <Esc>
+" Cursor
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
 " Linting
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
