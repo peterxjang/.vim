@@ -28,7 +28,6 @@ autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
 " Modify escape
 imap <C-c> <Esc>
-inoremap <Esc> <Esc>:w<CR>
 nnoremap <C-c> :noh<CR><C-c>
 " Cursor
 let &t_SI = "\e[6 q"
@@ -47,6 +46,7 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 set rtp+=~/.fzf
 " Shortcuts
 let mapleader = "\<Space>"
+nnoremap <leader>s :w<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
