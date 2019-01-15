@@ -44,6 +44,8 @@ let g:ale_sign_column_always = 1
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " Fuzzy finding
 set rtp+=~/.fzf
+command! -bang -nargs=? -complete=dir Files
+  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 " Shortcuts
 let mapleader = "\<Space>"
 nnoremap <leader>s :w<CR>
