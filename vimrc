@@ -23,6 +23,7 @@ set wildignore+=node_modules/*
 " Colors
 syntax enable
 colorscheme codedark
+hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 set cursorline
 autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
