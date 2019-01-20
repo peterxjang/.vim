@@ -18,6 +18,9 @@ set clipboard=unnamed
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swap//
 set undodir=~/.vim/.undo//
+" Fold code
+set foldmethod=indent
+set foldlevelstart=20
 " Find files
 set path+=**
 set wildmenu
