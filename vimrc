@@ -11,6 +11,8 @@ set splitright
 set smartindent
 set autoindent
 set incsearch
+set ignorecase
+set smartcase
 set hlsearch
 filetype indent on
 filetype plugin on
