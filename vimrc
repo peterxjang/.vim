@@ -28,6 +28,8 @@ set wildignore+=node_modules/*
 " Colors
 syntax enable
 colorscheme codedark
+hi StatusLineTerm ctermbg=none ctermfg=gray
+hi StatusLineTermNC ctermbg=none ctermfg=black
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 set cursorline
 autocmd InsertEnter * set nocursorline
@@ -55,6 +57,7 @@ command! -bang -nargs=? -complete=dir Files
 " Shortcuts
 let mapleader = "\<Space>"
 nnoremap <leader>s :w<CR>
+nnoremap <leader>t :terminal ++rows=10<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
