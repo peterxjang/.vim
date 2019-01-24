@@ -11,6 +11,8 @@ set splitright
 set smartindent
 set autoindent
 set incsearch
+set ignorecase
+set smartcase
 set hlsearch
 filetype indent on
 filetype plugin on
@@ -34,6 +36,8 @@ hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 set cursorline
 autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
+" add jbuilder syntax highlighting
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 " Modify escape
 imap <C-c> <Esc>
 nnoremap <C-c> :noh<CR><C-c>
