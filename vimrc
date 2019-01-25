@@ -11,6 +11,7 @@ set splitright
 set noequalalways
 set smartindent
 set autoindent
+set backspace=indent,eol,start
 set incsearch
 set ignorecase
 set smartcase
