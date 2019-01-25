@@ -14,6 +14,7 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
+set laststatus=0
 filetype indent on
 filetype plugin on
 set clipboard=unnamed
@@ -30,8 +31,6 @@ set wildignore+=node_modules/*
 " Colors
 syntax enable
 colorscheme codedark
-hi StatusLineTerm ctermbg=none ctermfg=gray
-hi StatusLineTermNC ctermbg=none ctermfg=black
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 set cursorline
 autocmd InsertEnter * set nocursorline
