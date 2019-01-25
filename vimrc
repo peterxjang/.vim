@@ -8,6 +8,7 @@ set expandtab
 set autowrite
 set splitbelow
 set splitright
+set noequalalways
 set smartindent
 set autoindent
 set incsearch
