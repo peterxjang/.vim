@@ -39,9 +39,12 @@ autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
-" Modify escape
+" Modify key behavior
 imap <C-c> <Esc>
 nnoremap <C-c> :noh<CR><C-c>
+inoremap <C-f> <C-o>l
+inoremap <C-b> <C-o>h
+set virtualedit=onemore
 " Cursor
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
