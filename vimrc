@@ -67,7 +67,8 @@ command! -bang -nargs=? -complete=dir Files
 " Shortcuts
 let mapleader = "\<Space>"
 nnoremap <leader>s :w<CR>
-nnoremap <leader>t :terminal ++rows=10<CR>
+" nnoremap <leader>t :terminal ++rows=10<CR>
+nnoremap <leader>t :vert terminal<CR>
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
