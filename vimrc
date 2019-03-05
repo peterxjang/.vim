@@ -20,6 +20,7 @@ set laststatus=0
 filetype indent on
 filetype plugin on
 set clipboard=unnamed
+set undofile
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swap//
 set undodir=~/.vim/.undo//
