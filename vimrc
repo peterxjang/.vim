@@ -1,4 +1,4 @@
-" Basic settings
+
 set nocompatible
 set number
 set tabstop=2
@@ -70,6 +70,7 @@ nnoremap <leader>s :w<CR>
 " nnoremap <leader>t :terminal ++rows=10<CR>
 nnoremap <leader>t :vert terminal<CR>
 nnoremap <leader>f :Files<CR>
+nnoremap <leader>g :GFiles<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
 nnoremap <leader>a :Ag<CR>
