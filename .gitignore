@@ -1,6 +1,7 @@
 /.backup/*
 /.swap/*
 /.undo/*
+/view/*
 !*/.keep
 *.log
 .netrwhist

@@ -1,4 +1,3 @@
-
 set nocompatible
 set number
 set tabstop=2
@@ -27,6 +26,11 @@ set undodir=~/.vim/.undo//
 " Fold code
 set foldmethod=indent
 set foldlevelstart=20
+augroup AutoSaveFolds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent loadview
+augroup END
 " Find files
 set path+=**
 set wildmenu
@@ -38,8 +42,9 @@ hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 set cursorline
 autocmd InsertEnter * set nocursorline
 autocmd InsertLeave * set cursorline
-" add jbuilder syntax highlighting
+" add additional file types for syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+au BufNewFile,BufRead *.json.jb set ft=ruby
 " Modify key behavior
 imap <C-c> <Esc>
 nnoremap <C-c> :noh<CR><C-c>
