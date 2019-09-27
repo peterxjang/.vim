@@ -71,14 +71,13 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " Fuzzy finding
 set rtp+=~/.fzf
 command! -bang -nargs=? -complete=dir Files
-  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+  \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)
 " Shortcuts
 let mapleader = "\<Space>"
 nnoremap <leader>s :w<CR>
 " nnoremap <leader>t :terminal ++rows=10<CR>
 nnoremap <leader>t :terminal<CR>
-nnoremap <leader>f :Files<CR>
-nnoremap <leader>g :GFiles<CR>
+nnoremap <leader>f :Files --exclude-standard --others --cached<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
 nnoremap <leader>a :Ag<CR>
