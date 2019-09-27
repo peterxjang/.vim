@@ -59,6 +59,7 @@ let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['prettier'],
 \   'vue': ['prettier'],
+\   'elixir': ['mix_format'],
 \}
 let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
 let g:ale_maximum_file_size = 102400
