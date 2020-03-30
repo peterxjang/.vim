@@ -77,7 +77,7 @@ command! -bang -nargs=? -complete=dir Files
 let mapleader = "\<Space>"
 nnoremap <leader>s :w<CR>
 " nnoremap <leader>t :terminal ++rows=10<CR>
-nnoremap <leader>t :terminal<CR>
+nnoremap <leader>t :bot terminal<CR>
 nnoremap <leader>f :Files --exclude-standard --others --cached<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
