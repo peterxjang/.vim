@@ -20,6 +20,7 @@ filetype indent on
 filetype plugin on
 set clipboard=unnamed
 set undofile
+set viminfo^=%
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swap//
 set undodir=~/.vim/.undo//
@@ -60,6 +61,7 @@ let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'vue': ['prettier'],
 \   'elixir': ['mix_format'],
+\   'ruby': ['rufo'],
 \}
 let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
 let g:ale_maximum_file_size = 102400
