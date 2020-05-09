@@ -24,6 +24,8 @@ set viminfo^=%
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swap//
 set undodir=~/.vim/.undo//
+" Change paste to auto indent
+nnoremap p p=`]
 " Fold code
 set foldmethod=indent
 set foldlevelstart=20
