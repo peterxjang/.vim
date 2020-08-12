@@ -20,7 +20,7 @@ filetype indent on
 filetype plugin on
 set clipboard=unnamed
 set undofile
-set viminfo^=%
+" set viminfo^=%
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swap//
 set undodir=~/.vim/.undo//
